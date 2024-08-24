@@ -38,8 +38,12 @@ func main() { // Y su punto de entrada es esta función main ubicada en este paq
 		fmt.Println(i) // Y imprime cada valor de i
 	}
 
+	pointer = &integer // Aqui se le asigna el valor de 10
+
 	// Este es un ejemplo basico sobre como se puede hacer uso de un puntero
 	x := 10
 	incrementa(&x) // Aqui se manda a llamar la funcion incrementa y se le pasa la direccion de memoria de x
 	fmt.Println(x) // Luego se imprime el valor de x y listo, el valor de x se incremento en 1
+	//*pointer = 500
+	fmt.Println(*pointer)
 }
