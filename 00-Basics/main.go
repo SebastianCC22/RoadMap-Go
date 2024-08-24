@@ -20,6 +20,10 @@ var (
 	pointer *int                          // pointer
 )
 
+func incrementa(x *int) { // Esta funcion recibe un puntero de tipo int
+	*x++ // Obtiene el valor de x con el operador * y lo incrementa en 1
+}
+
 func main() { // Y su punto de entrada es esta función main ubicada en este paquete main
 	fmt.Println("Hola Mundo")
 
@@ -33,4 +37,9 @@ func main() { // Y su punto de entrada es esta función main ubicada en este paq
 	for i := 0; i < 5; i++ { // Para i que es igual a 0, mientras i sea menor a 5, incrementa i en 1
 		fmt.Println(i) // Y imprime cada valor de i
 	}
+
+	// Este es un ejemplo basico sobre como se puede hacer uso de un puntero
+	x := 10
+	incrementa(&x) // Aqui se manda a llamar la funcion incrementa y se le pasa la direccion de memoria de x
+	fmt.Println(x) // Luego se imprime el valor de x y listo, el valor de x se incremento en 1
 }
