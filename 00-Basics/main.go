@@ -38,6 +38,17 @@ func main() { // Y su punto de entrada es esta función main ubicada en este paq
 		fmt.Println(i) // Y imprime cada valor de i
 	}
 
+	switch integer { // Switch es como un if pero con multiples casos
+	case 1: // Si integer es igual a 1
+		fmt.Println("Es 1") // Imprime esto
+	case 2: // Si integer es igual a
+		fmt.Println("Es 2") // Imprime esto
+	case 3: // Si integer es igual a 3
+		fmt.Println("Es 3") // Imprime esto
+	default: // Si no se cumple ningun caso
+		fmt.Println("No es 1, 2 o 3")
+	}
+
 	pointer = &integer // Aqui se le asigna el valor de 10
 
 	// Este es un ejemplo basico sobre como se puede hacer uso de un puntero
